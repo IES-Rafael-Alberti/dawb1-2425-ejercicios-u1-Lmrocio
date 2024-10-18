@@ -4,7 +4,7 @@
 
 
 def suma_final(num):
-    suma = sum(range(1,num+1))
+    suma = sum(range(1,num))
     return suma
 
 
