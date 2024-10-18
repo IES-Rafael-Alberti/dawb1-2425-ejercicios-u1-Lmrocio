@@ -7,7 +7,7 @@ el descuento que se le hace por no ser fresca y el coste final total de todas la
 
 precio = 3.49
 
-numnodia = int(input("Introduzca la cantidad de pan vendido que no son del día: "))
+num_nodia = int(input("Introduzca la cantidad de pan vendido que no son del día: "))
 descuento = precio*0.6
-total = numnodia*(precio-descuento)
-print(f"La barra de pan cuesta {precio} al que se le aplica un descuento de {descuento} por barra, quedando un total de: {total}.")
+total = num_nodia*(precio-descuento)
+print(f"La barra de pan cuesta {precio} al que se le aplica un descuento de {round(descuento, 2)} por barra, quedando un total de: {round(total, 2)}.")

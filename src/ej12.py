@@ -8,6 +8,4 @@ peso = float(input("Escriba su peso en kilogramos: "))
 altura = float(input("Escriba su altura en metros: "))
 
 masa = peso / (altura*altura)
-masa = round (masa, 2)
-
-print(f"Tu índice de masa corporal es de: ", masa)
+print(f"Tu índice de masa corporal es de: {round(masa, 2)}.")

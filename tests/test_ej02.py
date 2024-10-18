@@ -1,5 +1,5 @@
 import pytest
-from src.ej02 import salario
+from src.ej02_def import salario
 
 @pytest.mark.parametrize(
     "input_x, input_y, expected",
