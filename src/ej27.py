@@ -9,16 +9,19 @@ def datos_de_entrada():
     nombre = input("Introduzca el nombre del producto: ")
     precio = float(input("Introduzca el precio por unidad: "))
     cantidad = int(input("Introduzca la cantidad de productos: "))
+
     return nombre, precio, cantidad
 
 def cadena(nombre, precio, cantidad):
     res =' '
-    res = nombre + round(precio, 2) + cantidad
+    res = "El producto " + nombre + ", tiene el precio de " + str(round(precio, 2)) + " y son " + str(cantidad) + " unidades."
     return res
 
 def main():
     nombre, precio, cantidad = datos_de_entrada()
-    print("")
+    res = cadena(nombre, precio, cantidad)
+
+    print(res)
 
 if __name__ == '__main__':
     main()

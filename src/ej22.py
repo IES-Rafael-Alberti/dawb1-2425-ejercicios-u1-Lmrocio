@@ -9,17 +9,15 @@ def datos_entrada():
 
     return frase, vocal
 
-def cambiar_frase(frase: str, vocal):
-    frase_split = frase.split()
-    veces = frase_split.count(vocal)
+def cambiar_frase(frase: str, vocal: str):
+    frase = frase.replace(vocal, vocal.upper())
 
-    return veces
+    return frase
 
 
 def main():
-   frase, vocal = datos_entrada()
-   veces = cambiar_frase(frase, vocal)
-   print(veces)
+    frase, vocal = datos_entrada()
+    print(cambiar_frase(frase, vocal))
 
 if __name__ == "__main__":
     main()

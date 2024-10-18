@@ -11,5 +11,6 @@ def main():
     correo_split[1] = "ceu.es."
     res = correo_split[0] + "@"+ correo_split[1]
     print(f"Su nuevo correo es: {res}")
+    
 if __name__ == "__main__":
     main()
