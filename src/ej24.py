@@ -4,7 +4,8 @@ en euros con dos decimales y muestre por pantalla el número de euros y el núme
 '''
 def datos_entrada():
     precio = float(input("Introduzca el precio del producto:"))
-    return round(precio,2)
+    return round(precio, 2)
+
 def main():
     nuevo_precio = str(datos_entrada()).split(".")
     euros = nuevo_precio[0]

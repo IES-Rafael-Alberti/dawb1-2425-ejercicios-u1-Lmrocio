@@ -3,7 +3,7 @@ import math
 def calcular_area(a: float, b: float, c: float) -> float:
     semiper = (a + b + c)/2
     area = math.sqrt(semiper*(semiper-a)*(semiper-b)*(semiper-c))
-    return (area)
+    return area
 
 
 

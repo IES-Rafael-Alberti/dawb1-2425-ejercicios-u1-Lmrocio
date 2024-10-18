@@ -4,14 +4,22 @@ y una vocal, y después muestre por pantalla la misma frase pero con la vocal in
 '''
 
 def datos_entrada():
+    frase = input("Introduzca una frase: ")
+    vocal = input("Introduzca una vocal: ")
 
-def cambiar_frase():
-   
-    
+    return frase, vocal
+
+def cambiar_frase(frase: str, vocal):
+    frase_split = frase.split()
+    veces = frase_split.count(vocal)
+
+    return veces
+
 
 def main():
-   
-
+   frase, vocal = datos_entrada()
+   veces = cambiar_frase(frase, vocal)
+   print(veces)
 
 if __name__ == "__main__":
     main()
